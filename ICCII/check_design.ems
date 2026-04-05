@@ -1,0 +1,16 @@
+<Database>
+versionNumber:2
+Name/home/student/Downloads/Workshop/ICCII/check_design.ems
+Creation TimeSun Apr  5 05:44:22 2026
+Modified TimeSun Apr  5 05:44:22 2026
+Design Nameupdown_counter
+Library Nameupdown_counter_LIB
+</Database>
+<RuleCount>
+DFT-0111
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+DFT-011Informationreason10
+</Messages>
