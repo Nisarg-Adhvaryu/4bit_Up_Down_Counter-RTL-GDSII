@@ -1,0 +1,277 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : updown_counter
+Version: W-2024.09
+Date   : Sun Apr  5 05:01:05 2026
+****************************************
+
+Operating Conditions: ss0p7vn40c   Library: saed32rvt_ss0p7vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: dir (input port clocked by Clock)
+  Endpoint: count_reg[3]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  dir (in)                                 0.00       2.00 f
+  U15/S (FADDX1_RVT)                       0.84       2.84 r
+  U12/Y (INVX0_RVT)                        0.18       3.02 f
+  U17/Y (OA222X1_RVT)                      0.72       3.74 f
+  U18/SO (HADDX1_RVT)                      0.60       4.34 f
+  count_reg[3]/D (DFFARX1_RVT)             0.00       4.34 f
+  data arrival time                                   4.34
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  count_reg[3]/CLK (DFFARX1_RVT)           0.00       9.80 r
+  library setup time                      -0.57       9.23
+  data required time                                  9.23
+  -----------------------------------------------------------
+  data required time                                  9.23
+  data arrival time                                  -4.34
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+  Startpoint: dir (input port clocked by Clock)
+  Endpoint: count_reg[2]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  dir (in)                                 0.00       2.00 f
+  U15/S (FADDX1_RVT)                       0.84       2.84 r
+  U16/S (FADDX1_RVT)                       0.87       3.71 f
+  count_reg[2]/D (DFFARX1_RVT)             0.00       3.71 f
+  data arrival time                                   3.71
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  count_reg[2]/CLK (DFFARX1_RVT)           0.00       9.80 r
+  library setup time                      -0.59       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -3.71
+  -----------------------------------------------------------
+  slack (MET)                                         5.51
+
+
+  Startpoint: dir (input port clocked by Clock)
+  Endpoint: count_reg[1]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  dir (in)                                 0.00       2.00 f
+  U15/S (FADDX1_RVT)                       0.84       2.84 r
+  U12/Y (INVX0_RVT)                        0.18       3.02 f
+  count_reg[1]/D (DFFARX1_RVT)             0.00       3.02 f
+  data arrival time                                   3.02
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  count_reg[1]/CLK (DFFARX1_RVT)           0.00       9.80 r
+  library setup time                      -0.52       9.28
+  data required time                                  9.28
+  -----------------------------------------------------------
+  data required time                                  9.28
+  data arrival time                                  -3.02
+  -----------------------------------------------------------
+  slack (MET)                                         6.26
+
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: count[1] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  count_reg[1]/Q (DFFARX1_RVT)             0.95       0.95 r
+  count[1] (out)                           0.00       0.95 r
+  data arrival time                                   0.95
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  output external delay                   -2.00       7.80
+  data required time                                  7.80
+  -----------------------------------------------------------
+  data required time                                  7.80
+  data arrival time                                  -0.95
+  -----------------------------------------------------------
+  slack (MET)                                         6.85
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: count[0] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[0]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  count_reg[0]/Q (DFFARX1_RVT)             0.95       0.95 r
+  count[0] (out)                           0.00       0.95 r
+  data arrival time                                   0.95
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  output external delay                   -2.00       7.80
+  data required time                                  7.80
+  -----------------------------------------------------------
+  data required time                                  7.80
+  data arrival time                                  -0.95
+  -----------------------------------------------------------
+  slack (MET)                                         6.85
+
+
+  Startpoint: count_reg[3]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: count[3] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[3]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  count_reg[3]/Q (DFFARX1_RVT)             0.93       0.93 r
+  count[3] (out)                           0.00       0.93 r
+  data arrival time                                   0.93
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  output external delay                   -2.00       7.80
+  data required time                                  7.80
+  -----------------------------------------------------------
+  data required time                                  7.80
+  data arrival time                                  -0.93
+  -----------------------------------------------------------
+  slack (MET)                                         6.87
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: count[2] (output port clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[2]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  count_reg[2]/Q (DFFARX1_RVT)             0.92       0.92 r
+  count[2] (out)                           0.00       0.92 r
+  data arrival time                                   0.92
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  output external delay                   -2.00       7.80
+  data required time                                  7.80
+  -----------------------------------------------------------
+  data required time                                  7.80
+  data arrival time                                  -0.92
+  -----------------------------------------------------------
+  slack (MET)                                         6.88
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: count_reg[0]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  updown_counter     ForQA                 saed32rvt_ss0p7vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[0]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  count_reg[0]/QN (DFFARX1_RVT)            0.52       0.52 f
+  count_reg[0]/D (DFFARX1_RVT)             0.00       0.52 f
+  data arrival time                                   0.52
+
+  clock Clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  count_reg[0]/CLK (DFFARX1_RVT)           0.00       9.80 r
+  library setup time                      -0.56       9.24
+  data required time                                  9.24
+  -----------------------------------------------------------
+  data required time                                  9.24
+  data arrival time                                  -0.52
+  -----------------------------------------------------------
+  slack (MET)                                         8.72
+
+
+1
