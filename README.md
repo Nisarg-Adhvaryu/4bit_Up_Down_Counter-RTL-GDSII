@@ -88,30 +88,6 @@ GDSII Generation
 
 ---
 
-## Repository Structure
-
-```text
-4bit_Up_Down_Counter-RTL-GDSII
-│
-├── RTL/
-│   ├── counter.v
-│   └── testbench.v
-│
-├── Synthesis/
-│
-├── Physical_Design/
-│
-├── Reports/
-│
-├── Images/
-│
-└── README.md
-```
-
-> *Note: The folder structure may vary depending on the uploaded project files.*
-
----
-
 ## Functional Description
 
 The counter increments or decrements its value on every rising edge of the clock depending on the state of the Up/Down control signal.
